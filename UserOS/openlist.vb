@@ -26,31 +26,57 @@
         Close()
     End Sub
 
-    Private Sub openlist_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub WindowRefresh_Click(sender As Object, e As EventArgs) Handles WindowRefresh.Click
         Dim Prog As FormCollection = Application.OpenForms
         WindowList.Items.Clear()
         WindowSwitch.Enabled = True
+        WindowEnd.Enabled = True
 
         For Each notprog As Form In Prog
             WindowList.Items.Add(notprog.Name.ToString)
         Next
-        WindowList.Items.Remove(GUIDesktop)
     End Sub
 
     Private Sub WindowSwitch_Click(sender As Object, e As EventArgs) Handles WindowSwitch.Click
+        Dim Openprog As Form = Application.OpenForms(WindowList.Text)
         If Not WindowList.SelectedIndex = -1 Then
-            Dim Openprog As Form = Application.OpenForms(WindowList.Text)
             If IsFormOpen(Openprog) Then
                 Openprog.Show()
                 Openprog.BringToFront()
             Else
                 OpenListErr.Show()
                 WindowSwitch.Enabled = False
+                WindowEnd.Enabled = False
             End If
+        End If
+    End Sub
+
+    Private Sub WindowEnd_Click(sender As Object, e As EventArgs) Handles WindowEnd.Click
+        Dim Openprog As Form = Application.OpenForms(WindowList.Text)
+        If Not WindowList.SelectedIndex = -1 Then
+            If IsFormOpen(Openprog) Then
+                Openprog.Hide()
+                Openprog.Close()
+                WindowList.Items.Remove(Openprog.Name)
+            Else
+                OpenListErr.Show()
+                WindowSwitch.Enabled = False
+                WindowEnd.Enabled = False
+            End If
+        End If
+    End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+
+    End Sub
+
+    Private Sub WindowList_SelectedIndexChanged(sender As Object, e As EventArgs) Handles WindowList.SelectedIndexChanged
+        If WindowList.SelectedItem = GUIDesktop.Name Or WindowList.SelectedItem = Name Then
+            WindowSwitch.Enabled = False
+            WindowEnd.Enabled = False
+        Else
+            WindowSwitch.Enabled = True
+            WindowEnd.Enabled = True
         End If
     End Sub
 End Class

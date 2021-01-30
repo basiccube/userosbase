@@ -46,4 +46,27 @@
     Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
         WindowState = FormWindowState.Minimized
     End Sub
+    Protected Overrides Sub WndProc(ByRef m As Message)
+        Dim org As FormWindowState = WindowState
+        MyBase.WndProc(m)
+        If WindowState <> org Then OnFormWindowStateChanged(EventArgs.Empty)
+    End Sub
+
+    Protected Overridable Sub OnFormWindowStateChanged(e As EventArgs)
+        Dim minform As FormCollection = Application.OpenForms
+        If WindowState = FormWindowState.Minimized Then
+            For Each minformed As Form In minform
+                If minformed.Name <> Me.Name Then
+                    minformed.Hide()
+                End If
+            Next
+        End If
+        If WindowState = FormWindowState.Maximized Then
+            For Each minformed As Form In minform
+                If minformed.Name <> Me.Name Then
+                    minformed.Show()
+                End If
+            Next
+        End If
+    End Sub
 End Class

@@ -120,7 +120,7 @@ Partial Class GUIDesktop
         Me.SettingsPanelToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.SettingsPanelToolStripMenuItem1.Name = "SettingsPanelToolStripMenuItem1"
         Me.SettingsPanelToolStripMenuItem1.Padding = New System.Windows.Forms.Padding(0)
-        Me.SettingsPanelToolStripMenuItem1.Size = New System.Drawing.Size(194, 36)
+        Me.SettingsPanelToolStripMenuItem1.Size = New System.Drawing.Size(196, 36)
         Me.SettingsPanelToolStripMenuItem1.Text = "Settings"
         '
         'UserCoreShellToolStripMenuItem1
@@ -131,7 +131,7 @@ Partial Class GUIDesktop
         Me.UserCoreShellToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.UserCoreShellToolStripMenuItem1.Name = "UserCoreShellToolStripMenuItem1"
         Me.UserCoreShellToolStripMenuItem1.Padding = New System.Windows.Forms.Padding(0)
-        Me.UserCoreShellToolStripMenuItem1.Size = New System.Drawing.Size(194, 36)
+        Me.UserCoreShellToolStripMenuItem1.Size = New System.Drawing.Size(196, 36)
         Me.UserCoreShellToolStripMenuItem1.Text = "userCore Shell"
         '
         'AboutUserOSToolStripMenuItem1
@@ -142,7 +142,7 @@ Partial Class GUIDesktop
         Me.AboutUserOSToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.AboutUserOSToolStripMenuItem1.Name = "AboutUserOSToolStripMenuItem1"
         Me.AboutUserOSToolStripMenuItem1.Padding = New System.Windows.Forms.Padding(0)
-        Me.AboutUserOSToolStripMenuItem1.Size = New System.Drawing.Size(194, 36)
+        Me.AboutUserOSToolStripMenuItem1.Size = New System.Drawing.Size(196, 36)
         Me.AboutUserOSToolStripMenuItem1.Text = "About userOS"
         '
         'ExitMenu
@@ -154,7 +154,7 @@ Partial Class GUIDesktop
         Me.ExitMenu.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ExitMenu.Name = "ExitMenu"
         Me.ExitMenu.Padding = New System.Windows.Forms.Padding(0)
-        Me.ExitMenu.Size = New System.Drawing.Size(194, 36)
+        Me.ExitMenu.Size = New System.Drawing.Size(196, 36)
         Me.ExitMenu.Text = "Exit"
         '
         'RestartUserOSToolStripMenuItem1
@@ -165,7 +165,7 @@ Partial Class GUIDesktop
         Me.RestartUserOSToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.RestartUserOSToolStripMenuItem1.Name = "RestartUserOSToolStripMenuItem1"
         Me.RestartUserOSToolStripMenuItem1.Padding = New System.Windows.Forms.Padding(0)
-        Me.RestartUserOSToolStripMenuItem1.Size = New System.Drawing.Size(159, 36)
+        Me.RestartUserOSToolStripMenuItem1.Size = New System.Drawing.Size(196, 36)
         Me.RestartUserOSToolStripMenuItem1.Text = "Restart"
         '
         'ToolStripMenuItem1
@@ -176,7 +176,7 @@ Partial Class GUIDesktop
         Me.ToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
         Me.ToolStripMenuItem1.Padding = New System.Windows.Forms.Padding(0)
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(159, 36)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(196, 36)
         Me.ToolStripMenuItem1.Text = "Minimize"
         '
         'ExitUserOSToolStripMenuItem1
@@ -187,7 +187,7 @@ Partial Class GUIDesktop
         Me.ExitUserOSToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ExitUserOSToolStripMenuItem1.Name = "ExitUserOSToolStripMenuItem1"
         Me.ExitUserOSToolStripMenuItem1.Padding = New System.Windows.Forms.Padding(0)
-        Me.ExitUserOSToolStripMenuItem1.Size = New System.Drawing.Size(159, 36)
+        Me.ExitUserOSToolStripMenuItem1.Size = New System.Drawing.Size(196, 36)
         Me.ExitUserOSToolStripMenuItem1.Text = "Quit"
         '
         'ApplicationsToolStripMenuItem

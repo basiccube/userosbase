@@ -38,9 +38,9 @@ Partial Class OpenListErr
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(11, 34)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(222, 34)
+        Me.Label1.Size = New System.Drawing.Size(189, 34)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Cannot switch: Window doesn't exist." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Please refresh the Window List."
+        Me.Label1.Text = "Error: Window doesn't exist." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Please refresh the Window List."
         '
         'Button1
         '

@@ -91,16 +91,6 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized resource of type System.Byte[].
-        '''</summary>
-        Friend ReadOnly Property busy() As Byte()
-            Get
-                Dim obj As Object = ResourceManager.GetObject("busy", resourceCulture)
-                Return CType(obj,Byte())
-            End Get
-        End Property
-        
-        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property Desktop_color() As System.Drawing.Bitmap
@@ -117,16 +107,6 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("exit-menu", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Byte[].
-        '''</summary>
-        Friend ReadOnly Property main() As Byte()
-            Get
-                Dim obj As Object = ResourceManager.GetObject("main", resourceCulture)
-                Return CType(obj,Byte())
             End Get
         End Property
         

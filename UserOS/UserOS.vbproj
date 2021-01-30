@@ -104,16 +104,16 @@
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="TextEditor.Designer.vb">
       <DependentUpon>TextEditor.vb</DependentUpon>
     </Compile>
     <Compile Include="TextEditor.vb">
       <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="My Project\Resources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="openlist.Designer.vb">
       <DependentUpon>openlist.vb</DependentUpon>
@@ -277,12 +277,9 @@
     <None Include="Resources\restart-menu.png" />
     <None Include="Resources\exit-menu.png" />
     <None Include="Resources\appget.png" />
-    <None Include="Resources\appget-menu.png" />
     <None Include="Resources\appget-menu2.png" />
     <None Include="Resources\openlist.png" />
-    <None Include="Resources\busy.cur" />
     <None Include="Resources\about-useredit.png" />
-    <None Include="Resources\main.cur" />
     <Content Include="userEdit-icon.ico" />
     <Content Include="useros-icon.ico" />
   </ItemGroup>

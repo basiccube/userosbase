@@ -29,7 +29,6 @@ Partial Class Settingspanel
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.pnlTopBorder = New System.Windows.Forms.Panel()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.pnlTopBorder.SuspendLayout()
@@ -110,22 +109,6 @@ Partial Class Settingspanel
         Me.pnlTopBorder.Size = New System.Drawing.Size(202, 33)
         Me.pnlTopBorder.TabIndex = 17
         '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.CheckBox1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black
-        Me.CheckBox1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.CheckBox1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray
-        Me.CheckBox1.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(186, Byte))
-        Me.CheckBox1.Location = New System.Drawing.Point(17, 135)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(138, 21)
-        Me.CheckBox1.TabIndex = 18
-        Me.CheckBox1.Text = "Start GUI on startup"
-        Me.CheckBox1.UseVisualStyleBackColor = False
-        '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.userOS.My.Resources.Resources.Desktop_color
@@ -140,7 +123,6 @@ Partial Class Settingspanel
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel1.Controls.Add(Me.CheckBox1)
         Me.Panel1.Controls.Add(Me.pnlTopBorder)
         Me.Panel1.Controls.Add(Me.Button8)
         Me.Panel1.Controls.Add(Me.PictureBox1)
@@ -187,6 +169,5 @@ Partial Class Settingspanel
     Friend WithEvents Button9 As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents pnlTopBorder As Panel
-    Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Panel1 As Panel
 End Class

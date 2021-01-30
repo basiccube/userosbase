@@ -29,7 +29,7 @@
         Application.Exit()
     End Sub
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        UserCore.Show()
+        GUIDesktop.Show()
         My.Settings.FirstTime = False
         My.Settings.Save()
         Hide()

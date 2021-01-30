@@ -36,26 +36,10 @@
     End Sub
 
     Private Sub Settingspanel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If My.Settings.StartGUI = True Then
-            CheckBox1.Checked = True
-        End If
-        If My.Settings.StartGUI = False Then
-            CheckBox1.Checked = False
-        End If
+
     End Sub
 
     Private Sub pnlTopBorder_Paint(sender As Object, e As PaintEventArgs) Handles pnlTopBorder.Paint
 
-    End Sub
-
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
-        If CheckBox1.Checked = True Then
-            My.Settings.StartGUI = True
-            My.Settings.Save()
-        End If
-        If CheckBox1.Checked = False Then
-            My.Settings.StartGUI = False
-            My.Settings.Save()
-        End If
     End Sub
 End Class
