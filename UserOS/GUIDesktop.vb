@@ -1,5 +1,4 @@
 ﻿Public Class GUIDesktop
-    Private ReadOnly MainCursor As New IO.MemoryStream(My.Resources.main)
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
         UserCore.Show()
     End Sub
