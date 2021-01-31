@@ -31,7 +31,7 @@
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        openlist.Show()
+        Openlist.Show()
     End Sub
 
     Private Sub RestartUserOSToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles RestartUserOSToolStripMenuItem1.Click
@@ -56,17 +56,21 @@
         Dim minform As FormCollection = Application.OpenForms
         If WindowState = FormWindowState.Minimized Then
             For Each minformed As Form In minform
-                If minformed.Name <> Me.Name Then
+                If minformed.Name <> Name Then
                     minformed.Hide()
                 End If
             Next
         End If
         If WindowState = FormWindowState.Maximized Then
             For Each minformed As Form In minform
-                If minformed.Name <> Me.Name Then
+                If minformed.Name <> Name Then
                     minformed.Show()
                 End If
             Next
         End If
+    End Sub
+
+    Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem2.Click
+        Openlist.Show()
     End Sub
 End Class

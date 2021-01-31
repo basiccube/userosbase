@@ -1,4 +1,4 @@
-﻿Public Class openlist
+﻿Public Class Openlist
 
     Public Function IsFormOpen(frm As Form) As Boolean
         Return Application.OpenForms.OfType(Of Form).Contains(frm)
@@ -65,11 +65,6 @@
             End If
         End If
     End Sub
-
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
-
-    End Sub
-
     Private Sub WindowList_SelectedIndexChanged(sender As Object, e As EventArgs) Handles WindowList.SelectedIndexChanged
         If WindowList.SelectedItem = GUIDesktop.Name Or WindowList.SelectedItem = Name Then
             WindowSwitch.Enabled = False

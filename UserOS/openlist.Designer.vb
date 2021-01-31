@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class openlist
+Partial Class Openlist
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,15 +22,15 @@ Partial Class openlist
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(openlist))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Openlist))
         Me.pnlTopBorder = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.WindowEnd = New System.Windows.Forms.Button()
         Me.WindowSwitch = New System.Windows.Forms.Button()
         Me.WindowRefresh = New System.Windows.Forms.Button()
         Me.WindowList = New System.Windows.Forms.ListBox()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.pnlTopBorder.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -43,6 +43,18 @@ Partial Class openlist
         Me.pnlTopBorder.Name = "pnlTopBorder"
         Me.pnlTopBorder.Size = New System.Drawing.Size(259, 35)
         Me.pnlTopBorder.TabIndex = 10
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(8, 8)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(84, 18)
+        Me.Label5.TabIndex = 17
+        Me.Label5.Text = "Window List"
         '
         'Button3
         '
@@ -137,18 +149,6 @@ Partial Class openlist
         Me.WindowList.Name = "WindowList"
         Me.WindowList.Size = New System.Drawing.Size(237, 121)
         Me.WindowList.TabIndex = 12
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(3, 8)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(84, 18)
-        Me.Label5.TabIndex = 17
-        Me.Label5.Text = "Window List"
         '
         'openlist
         '

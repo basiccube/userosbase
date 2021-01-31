@@ -20,11 +20,6 @@
         Hide()
         Close()
     End Sub
-
-    Private Sub PnlTopBorder_Paint(sender As Object, e As PaintEventArgs) Handles pnlTopBorder.Paint
-
-    End Sub
-
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Hide()
         Close()

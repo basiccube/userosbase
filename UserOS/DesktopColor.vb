@@ -67,10 +67,6 @@
         Label2.Text = "Red"
     End Sub
 
-    Private Sub Form5_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Label2.Text = "Black"
     End Sub
@@ -98,17 +94,5 @@
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         Hide()
         Close()
-    End Sub
-
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles windborder.Paint
-
-    End Sub
-
-    Private Sub PnlTopBorder_Paint(sender As Object, e As PaintEventArgs) Handles PnlTopBorder.Paint
-
     End Sub
 End Class

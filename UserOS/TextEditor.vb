@@ -1,20 +1,20 @@
 ﻿Public Class TextEditor
 
-    Private newpoint As System.Drawing.Point
+    Private newpoint As Point
     Private xpos1 As Integer
     Private ypos1 As Integer
 
-    Private Sub pnlTopBorder_MouseDown(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles pnlTopBorder.MouseDown
-        xpos1 = Control.MousePosition.X - Me.Location.X
-        ypos1 = Control.MousePosition.Y - Me.Location.Y
+    Private Sub PnlTopBorder_MouseDown(sender As Object, e As MouseEventArgs) Handles pnlTopBorder.MouseDown
+        xpos1 = MousePosition.X - Location.X
+        ypos1 = MousePosition.Y - Location.Y
     End Sub
 
-    Private Sub pnlTopBorder_MouseMove(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles pnlTopBorder.MouseMove
+    Private Sub PnlTopBorder_MouseMove(sender As Object, e As MouseEventArgs) Handles pnlTopBorder.MouseMove
         If e.Button = Windows.Forms.MouseButtons.Left Then
-            newpoint = Control.MousePosition
-            newpoint.X -= (xpos1)
-            newpoint.Y -= (ypos1)
-            Me.Location = newpoint
+            newpoint = MousePosition
+            newpoint.X -= xpos1
+            newpoint.Y -= ypos1
+            Location = newpoint
         End If
     End Sub
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -32,19 +32,19 @@
     End Sub
 
     Protected Overrides Sub OnPaint(e As PaintEventArgs)
-        e.Graphics.FillRectangle(Brushes.Gray, Topborder)
-        e.Graphics.FillRectangle(Brushes.Gray, Leftborder)
-        e.Graphics.FillRectangle(Brushes.Gray, Rightborder)
-        e.Graphics.FillRectangle(Brushes.Gray, Bottomborder)
+        e.Graphics.FillRectangle(Brushes.DimGray, Topborder)
+        e.Graphics.FillRectangle(Brushes.DimGray, Leftborder)
+        e.Graphics.FillRectangle(Brushes.DimGray, Rightborder)
+        e.Graphics.FillRectangle(Brushes.DimGray, Bottomborder)
     End Sub
 
 
     Private Const HTLEFT As Integer = 10, HTRIGHT As Integer = 11, HTTOP As Integer = 12, HTTOPLEFT As Integer = 13, HTTOPRIGHT As Integer = 14, HTBOTTOM As Integer = 15, HTBOTTOMLEFT As Integer = 16, HTBOTTOMRIGHT As Integer = 17
 
-    Protected Overrides Sub WndProc(ByRef m As System.Windows.Forms.Message)
+    Protected Overrides Sub WndProc(ByRef m As Message)
         MyBase.WndProc(m)
         If m.Msg = &H84 Then
-            Dim mp = Me.PointToClient(Cursor.Position)
+            Dim mp = PointToClient(Cursor.Position)
 
             If TopLeftborder.Contains(mp) Then
                 m.Result = CType(HTTOPLEFT, IntPtr)
@@ -69,11 +69,11 @@
     Private Const ImaginaryBorderSize As Integer = 16
 
     Public Function Topborder() As Rectangle
-        Return New Rectangle(0, 0, Me.ClientSize.Width, ImaginaryBorderSize)
+        Return New Rectangle(0, 0, ClientSize.Width, ImaginaryBorderSize)
     End Function
 
     Public Function Leftborder() As Rectangle
-        Return New Rectangle(0, 0, ImaginaryBorderSize, Me.ClientSize.Height)
+        Return New Rectangle(0, 0, ImaginaryBorderSize, ClientSize.Height)
     End Function
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -99,11 +99,11 @@
     End Sub
 
     Public Function Bottomborder() As Rectangle
-        Return New Rectangle(0, Me.ClientSize.Height - ImaginaryBorderSize, Me.ClientSize.Width, ImaginaryBorderSize)
+        Return New Rectangle(0, ClientSize.Height - ImaginaryBorderSize, ClientSize.Width, ImaginaryBorderSize)
     End Function
 
     Public Function Rightborder() As Rectangle
-        Return New Rectangle(Me.ClientSize.Width - ImaginaryBorderSize, 0, ImaginaryBorderSize, Me.ClientSize.Height)
+        Return New Rectangle(ClientSize.Width - ImaginaryBorderSize, 0, ImaginaryBorderSize, ClientSize.Height)
     End Function
 
     Public Function TopLeftborder() As Rectangle
@@ -111,15 +111,15 @@
     End Function
 
     Public Function TopRightborder() As Rectangle
-        Return New Rectangle(Me.ClientSize.Width - ImaginaryBorderSize, 0, ImaginaryBorderSize, ImaginaryBorderSize)
+        Return New Rectangle(ClientSize.Width - ImaginaryBorderSize, 0, ImaginaryBorderSize, ImaginaryBorderSize)
     End Function
 
     Public Function BottomLeftborder() As Rectangle
-        Return New Rectangle(0, Me.ClientSize.Height - ImaginaryBorderSize, ImaginaryBorderSize, ImaginaryBorderSize)
+        Return New Rectangle(0, ClientSize.Height - ImaginaryBorderSize, ImaginaryBorderSize, ImaginaryBorderSize)
     End Function
 
     Public Function BottomRightborder() As Rectangle
-        Return New Rectangle(Me.ClientSize.Width - ImaginaryBorderSize, Me.ClientSize.Height - ImaginaryBorderSize, ImaginaryBorderSize, ImaginaryBorderSize)
+        Return New Rectangle(ClientSize.Width - ImaginaryBorderSize, ClientSize.Height - ImaginaryBorderSize, ImaginaryBorderSize, ImaginaryBorderSize)
     End Function
 
     Private Sub Main_Resize(sender As Object, e As EventArgs) Handles Me.Resize

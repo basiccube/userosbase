@@ -132,7 +132,7 @@ Partial Class Settingspanel
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(314, 169)
+        Me.Panel1.Size = New System.Drawing.Size(314, 131)
         Me.Panel1.TabIndex = 19
         '
         'Settingspanel
@@ -140,7 +140,7 @@ Partial Class Settingspanel
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DimGray
-        Me.ClientSize = New System.Drawing.Size(314, 169)
+        Me.ClientSize = New System.Drawing.Size(314, 131)
         Me.Controls.Add(Me.Panel1)
         Me.ForeColor = System.Drawing.Color.White
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None

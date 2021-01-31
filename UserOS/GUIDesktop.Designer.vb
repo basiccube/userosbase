@@ -31,6 +31,7 @@ Partial Class GUIDesktop
         Me.SettingsPanelToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.UserCoreShellToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutUserOSToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.RestartUserOSToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
@@ -102,7 +103,7 @@ Partial Class GUIDesktop
         'SystemToolStripMenuItem1
         '
         Me.SystemToolStripMenuItem1.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.SystemToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SettingsPanelToolStripMenuItem1, Me.UserCoreShellToolStripMenuItem1, Me.AboutUserOSToolStripMenuItem1, Me.ExitMenu})
+        Me.SystemToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SettingsPanelToolStripMenuItem1, Me.UserCoreShellToolStripMenuItem1, Me.ToolStripMenuItem2, Me.AboutUserOSToolStripMenuItem1, Me.ExitMenu})
         Me.SystemToolStripMenuItem1.ForeColor = System.Drawing.Color.Black
         Me.SystemToolStripMenuItem1.Image = Global.userOS.My.Resources.Resources.menu_sys
         Me.SystemToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
@@ -145,6 +146,17 @@ Partial Class GUIDesktop
         Me.AboutUserOSToolStripMenuItem1.Size = New System.Drawing.Size(196, 36)
         Me.AboutUserOSToolStripMenuItem1.Text = "About userOS"
         '
+        'ToolStripMenuItem2
+        '
+        Me.ToolStripMenuItem2.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.ToolStripMenuItem2.ForeColor = System.Drawing.Color.Black
+        Me.ToolStripMenuItem2.Image = Global.userOS.My.Resources.Resources.menu_sys
+        Me.ToolStripMenuItem2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        Me.ToolStripMenuItem2.Padding = New System.Windows.Forms.Padding(0)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(196, 36)
+        Me.ToolStripMenuItem2.Text = "Window List"
+        '
         'ExitMenu
         '
         Me.ExitMenu.BackColor = System.Drawing.Color.WhiteSmoke
@@ -165,7 +177,7 @@ Partial Class GUIDesktop
         Me.RestartUserOSToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.RestartUserOSToolStripMenuItem1.Name = "RestartUserOSToolStripMenuItem1"
         Me.RestartUserOSToolStripMenuItem1.Padding = New System.Windows.Forms.Padding(0)
-        Me.RestartUserOSToolStripMenuItem1.Size = New System.Drawing.Size(196, 36)
+        Me.RestartUserOSToolStripMenuItem1.Size = New System.Drawing.Size(159, 36)
         Me.RestartUserOSToolStripMenuItem1.Text = "Restart"
         '
         'ToolStripMenuItem1
@@ -176,7 +188,7 @@ Partial Class GUIDesktop
         Me.ToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
         Me.ToolStripMenuItem1.Padding = New System.Windows.Forms.Padding(0)
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(196, 36)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(159, 36)
         Me.ToolStripMenuItem1.Text = "Minimize"
         '
         'ExitUserOSToolStripMenuItem1
@@ -187,7 +199,7 @@ Partial Class GUIDesktop
         Me.ExitUserOSToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ExitUserOSToolStripMenuItem1.Name = "ExitUserOSToolStripMenuItem1"
         Me.ExitUserOSToolStripMenuItem1.Padding = New System.Windows.Forms.Padding(0)
-        Me.ExitUserOSToolStripMenuItem1.Size = New System.Drawing.Size(196, 36)
+        Me.ExitUserOSToolStripMenuItem1.Size = New System.Drawing.Size(159, 36)
         Me.ExitUserOSToolStripMenuItem1.Text = "Quit"
         '
         'ApplicationsToolStripMenuItem
@@ -345,4 +357,5 @@ Partial Class GUIDesktop
     Friend WithEvents ExitUserOSToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents RestartUserOSToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
 End Class
