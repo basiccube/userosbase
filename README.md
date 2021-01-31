@@ -4,7 +4,9 @@ This is the official repository for userOS, a fake operating system base made in
 
 userOS is designed as a base that can be used for many things, for example - a game that focuses around a fake operating system.
 
-Everything included in userOS is not real.
+Various features are included in userOS so that you don't have to program them yourself.
+
+Currently userOS is far from finished, so there's not much here.
 
 # Trying out userOS
 To try out userOS, you can compile it or download a release (if available).
